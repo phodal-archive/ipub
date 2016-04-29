@@ -21,7 +21,8 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "pen": "^0.2.2",
-    "jstree": "^3.3.0"
+    "jstree": "^3.3.0",
+    "riot": "^2.3.18"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -1,38 +1,43 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ipub</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ipub</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="/bower_components/pen/src/pen.css">
-    <link rel="stylesheet" href="/bower_components/jstree/dist/themes/default/style.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-  <div id="jstree">
-    <!-- in this example the tree is populated from inline HTML -->
-    <ul>
-      <li>Root node 1
-        <ul>
-          <li id="child_node_1">Child node 1</li>
-          <li>Child node 2</li>
-        </ul>
-      </li>
-      <li>Root node 2</li>
-    </ul>
-  </div>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="/bower_components/pen/src/pen.css">
+  <link rel="stylesheet" href="/bower_components/jstree/dist/themes/default/style.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<div id="jstree">
+  <!-- in this example the tree is populated from inline HTML -->
+  <ul>
+    <li>Root node 1
+      <ul>
+        <li id="child_node_1">Child node 1</li>
+        <li>Child node 2</li>
+      </ul>
+    </li>
+    <li>Root node 2</li>
+  </ul>
+</div>
 
-    <div class="hero-unit">
-      <div id="editor"></div>
-    </div>
+<timer></timer>
+<script src="tags/timer.tag" type="riot/tag"></script>
 
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/pen/src/pen.js"></script>
-    <script src="/bower_components/pen/src/markdown.js"></script>
-    <script src="/bower_components/jstree/dist/jstree.min.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+<div class="hero-unit">
+  <div id="editor"></div>
+</div>
+
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/riot/riot+compiler.min.js"></script>
+<script src="/bower_components/pen/src/pen.js"></script>
+<script src="/bower_components/pen/src/markdown.js"></script>
+<script src="/bower_components/jstree/dist/jstree.min.js"></script>
+<script src="scripts/main.js"></script>
+<script> riot.mount('timer', {start: 0}) </script>
+</body>
 </html>
