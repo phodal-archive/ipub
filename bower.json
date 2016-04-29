@@ -1,0 +1,21 @@
+{
+  "name": "ipub",
+  "description": "iPublish",
+  "main": "index.js",
+  "authors": [
+    "Phodal Huang"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Publish",
+    "markdown"
+  ],
+  "homepage": "https://github.com/phodal/ipub",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
