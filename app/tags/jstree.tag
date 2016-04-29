@@ -1,7 +1,7 @@
 <jstree>
   <p>
   <ul class="path-tree">
-    <li each={ file, i in files }>{ file.path }</li>
+    <li each={ file, i in files } class={ file.type }>{ file.path } <span if={ file.type === 'tree' }> / </span></li>
   </ul>
   </p>
 

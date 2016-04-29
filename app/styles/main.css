@@ -46,3 +46,7 @@ ul.path-tree {
 ul.path-tree li {
   list-style: none;
 }
+
+ul.path-tree li.tree {
+  color: #2196f3;
+}
