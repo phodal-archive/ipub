@@ -7,3 +7,12 @@ var options = {
 }
 
 var editor = new Pen(options);
+
+var reposName = 'phodal/growth-ebook/';
+var githubUrl = 'https://api.github.com/repos/';
+var gitFiles = 'git/trees/master';
+var url =
+
+$.get(githubUrl + reposName + gitFiles, function(result){
+  console.log(result);
+})
