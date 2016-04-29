@@ -8,9 +8,23 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="/bower_components/pen/src/pen.css">
+    <link rel="stylesheet" href="/bower_components/jstree/dist/themes/default/style.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+  <div id="jstree">
+    <!-- in this example the tree is populated from inline HTML -->
+    <ul>
+      <li>Root node 1
+        <ul>
+          <li id="child_node_1">Child node 1</li>
+          <li>Child node 2</li>
+        </ul>
+      </li>
+      <li>Root node 2</li>
+    </ul>
+  </div>
+
     <div class="hero-unit">
       <div id="editor"></div>
     </div>
@@ -18,6 +32,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/pen/src/pen.js"></script>
     <script src="/bower_components/pen/src/markdown.js"></script>
+    <script src="/bower_components/jstree/dist/jstree.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
