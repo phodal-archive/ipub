@@ -16,7 +16,6 @@ body {
   line-height: 30px;
   background-color: #eee;
   border-radius: 6px;
-  padding: 60px;
 }
 
 .hero-unit h1 {
@@ -33,6 +32,17 @@ body {
 }
 
 jstree {
+  margin-top: 30px;
+  marginleft: 20px;
   width: 20%;
   float: left;
+}
+
+ul.path-tree {
+  margin-left: 0;
+  padding-left: 10px;
+}
+
+ul.path-tree li {
+  list-style: none;
 }

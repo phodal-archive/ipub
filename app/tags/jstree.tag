@@ -1,6 +1,6 @@
 <jstree>
   <p>
-  <ul>
+  <ul class="path-tree">
     <li each={ file, i in files }>{ file.path }</li>
   </ul>
   </p>
