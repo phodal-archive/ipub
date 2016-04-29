@@ -14,6 +14,7 @@ var gitFiles = 'git/trees/master';
 
 $.get(githubUrl + reposName + gitFiles, function (result) {
   console.log(result);
+  riot.mount('jstree', {files: result.tree})
 })
 
 $(function () {

@@ -1,20 +1,16 @@
-<timer>
-
-  <p>Seconds Elapsed: { time }</p>
+<jstree>
+  <p>
+  <ul>
+    <li each={ file, i in files }>{ file.path }</li>
+  </ul>
+  </p>
 
   <script>
-    this.time = opts.start || 0
-
-    tick()
-    {
-      this.update({time: ++this.time})
-    }
-
-    var timer = setInterval(this.tick, 1000)
+    this.files = opts.files || 0
 
     this.on('unmount', function () {
-      clearInterval(timer)
+
     })
   </script>
 
-</timer>
+</jstree>
